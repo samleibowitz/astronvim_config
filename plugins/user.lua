@@ -16,8 +16,8 @@ return {
     opts = {},
     event = "User AstroFile",
     cmd = { "TodoQuickFix" },
-    keys = {
-      { "<leader>T", "<cmd>TodoTelescope<cr>" },
-    },
+  },
+  {
+    require("oil").setup(),
   },
 }

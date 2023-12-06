@@ -34,10 +34,12 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- ["<leader>a"] = { "<cmd>echo 'Hello world!'<cr>", desc = "Say Hello World!"},
     ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }, -- toggleTerm
+    --  ["-"] = { require("oil").open, desc = "Oil - Open parent dir" },
+    ["<C-M-p>"] = { "<cmd>set wrap!<cr>", desc = "Toggle wrapping" },
+    ["<leader>uT"] = { "<cmd>Themery<cr>", desc = "Open Themery" },
   },
   t = {
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
+    -- setting a mapping to false will disable it ["<esc>"] = false,
     ["<C-/>"] = { "<cmd>ToggleTerm<cr>", desc = "Toggle terminal" }, -- toggleTerm
   },
   v = {},
