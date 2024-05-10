@@ -5,7 +5,6 @@ return {
     config.themeConfigFile = "~/.config/nvim/lua/user/theme.lua"
     config.themes = {
       "catppuccin",
-      "gruvbox",
       {
         name = "Gruvbox dark",
         colorscheme = "gruvbox",
@@ -15,6 +14,14 @@ return {
     ]],
       },
       "astrodark",
+      "desert",
+      {
+        name = "Tokyo Night",
+        colorscheme = "tokyonight",
+        before = [[
+      vim.opt.background = "dark"
+    ]],
+      },
       -- "koehler",
     }
     return config -- return final config table
